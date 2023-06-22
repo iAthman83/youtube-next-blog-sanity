@@ -4,9 +4,9 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className="lg:px-24 px-4">
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div className="flex flex-col space-y-4 justify-end py-8 flex-1">
-          <h1 className="capitalize text-5xl font-semibold">
+          <h1 className="capitalize text-3xl md:text-5xl font-semibold">
             A blog for all ages and website lovers
           </h1>
           <p className="">
