@@ -14,9 +14,12 @@ const HeroSection = () => {
             Using its high-quality sections and components you can showcase your
             blog articles in a very beautiful and unique way.
           </p>
-          <button className="bg-primary-brand text-primary-bg w-44 py-2 rounded">
+          <Link
+            href="/contact"
+            className="bg-primary-brand flex justify-center text-primary-bg w-44 py-2 rounded"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
         <div className="flex justify-center flex-1">
           <Image
