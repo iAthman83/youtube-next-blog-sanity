@@ -4,7 +4,7 @@ import Link from "next/link";
 const BlogCard = ({ postData }) => {
   return (
     <Link href={`/${postData._id}`}>
-      <div className="flex flex-col space-y-2 w-72 rounded overflow-hidden">
+      <div className="flex flex-col space-y-2 bg-primary-bg w-72 hover:scale-105 transition-transform duration-200 ease-out rounded overflow-hidden">
         <div>
           <Image src={postData.image} alt="image" height={50} width={300} />
         </div>
