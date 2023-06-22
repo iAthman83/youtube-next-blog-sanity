@@ -1,5 +1,6 @@
 import { getPosts } from "@/lib/client";
 import Image from "next/image";
+import { PortableText } from "@portabletext/react";
 
 const SingleBlogPage = async ({ params }) => {
   const posts = await getPosts();
@@ -21,7 +22,7 @@ const SingleBlogPage = async ({ params }) => {
           {singlePost.title}
         </h1>
       </div>
-      {singlePost.body}
+      <PortableText value={singlePost.content} />
     </div>
   );
 };
